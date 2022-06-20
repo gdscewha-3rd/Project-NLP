@@ -6,7 +6,7 @@ from .models import Code1, Code2, similarity
 
 def index(request):
     template = loader.get_template('compare/index.html')
-    context = {"this is index page"}
+    context = {str:"this is index page"}
     return render(request,'compare/index.html',context)
 
 def result(request):
