@@ -15,22 +15,27 @@
 
 <!doctype html>
 <html>
+  <link rel="stylesheet" href="templates/compare/style.css">
   <head>
     <title>compare</title> 
     <meta charset="utf-8">
   </head>
 
   <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <input id="night_day" type="button" value="night" onclick="
-      nightDayHandler(this);
-    ">
+    <h1>Code Similarity Determination</h1>
+    <h2> please input the code1 and code2 to compare similarity </h2>
+    
     <div id="grid">
+      <label for="code1">CODE1: </label>
+      <input type="text" id="code1" name="code1" required minlength="0" maxlength="256" size="100">
+
+      <label for="code2">CODE2: </label>
+      <input type="text" id="code2" name="code2" required minlength="0" maxlength="256" size="100">
+
+      <button type="button" onclick="alert('Hello World!')">결과</button>
       
     </div>
       
-  </p>
-
-</script>
   </body>
+
 </html>
